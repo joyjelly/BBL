@@ -19,9 +19,9 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
         show_sql: true
         format_sql: true
-    hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
 
   web:
     resources:
