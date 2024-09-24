@@ -27,6 +27,9 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
+      - name: Check build/libs directory
+        run: ls -la build/libs  # 빌드된 JAR 파일 확인
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
