@@ -5,8 +5,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class LoginController {
-    @RequestMapping("/")
-    private String goToIndex(){
+    @RequestMapping("/login")
+    private String goToLogin(){
         return "login";
     }
+
+    @RequestMapping("/")
+    private String goToIndex(){
+        return "index";
+    }
+
 }
